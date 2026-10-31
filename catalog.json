@@ -1,0 +1,288 @@
+{
+  "format": "nordus.catalog",
+  "version": 1,
+  "teams": [
+    {
+      "slug": "atendimento",
+      "name": "ATENDIMENTO",
+      "summary": "Atendimento ao cliente que responde o chat e o e-mail de suporte do seu produto, trata falhas e cuida do pós-venda, dentro de uma política que você aprova. Antes de usar, prepare: Caixa de e-mail de suporte.",
+      "category": "Atendimento",
+      "outcome": "Clientes respondidos no chat e no e-mail, uma resposta por mensagem, no tom e dentro da política que você aprovou.",
+      "setupMinutes": 20,
+      "manifest": "teams/atendimento/atendimento.nordusteam.json",
+      "readme": "teams/atendimento/README.md",
+      "members": 1,
+      "skills": [
+        "teams/atendimento/skills/atendimento-por-chat-e-email/SKILL.md",
+        "teams/atendimento/skills/triagem-de-problema-e-reembolso/SKILL.md",
+        "teams/atendimento/skills/relato-de-defeito-ao-programador/SKILL.md",
+        "teams/atendimento/skills/pos-venda-e-satisfacao/SKILL.md",
+        "teams/atendimento/skills/politica-de-atendimento/SKILL.md"
+      ],
+      "requires": {
+        "apps": [
+          "E-mail (caixa de suporte)",
+          "Chat do site ou sistema de atendimento",
+          "Sistema do seu produto"
+        ]
+      }
+    },
+    {
+      "slug": "designer-de-ia",
+      "name": "DESIGNER DE IA",
+      "summary": "Cria imagens pelo Zim Studio: gera e melhora fotos, transforma render em foto real e prepara assets sem texto para a peça final. Antes de usar, prepare: Zim Studio.",
+      "category": "Design",
+      "outcome": "Fotos de contexto, texturas, fundos e objetos prontos para a peça, sem cara de IA.",
+      "setupMinutes": 5,
+      "manifest": "teams/designer-de-ia/designer-de-ia.nordusteam.json",
+      "readme": "teams/designer-de-ia/README.md",
+      "members": 1,
+      "skills": [
+        "teams/designer-de-ia/skills/geracao-de-imagem-com-ia/SKILL.md",
+        "teams/designer-de-ia/skills/imagem-por-codigo/SKILL.md"
+      ],
+      "requires": {
+        "apps": [
+          "Zim Studio"
+        ]
+      }
+    },
+    {
+      "slug": "designer-grafico",
+      "name": "DESIGNER GRÁFICO",
+      "summary": "Monta capas de reels, carrosséis, posts e apresentações no Figma com nível de agência e usa o Zim Studio só para assets. Antes de usar, prepare: Figma.",
+      "category": "Design",
+      "outcome": "Capas de reels, carrosséis, posts e apresentações montados no Figma, com arquivo editável por trás.",
+      "setupMinutes": 10,
+      "manifest": "teams/designer-grafico/designer-grafico.nordusteam.json",
+      "readme": "teams/designer-grafico/README.md",
+      "members": 1,
+      "skills": [
+        "teams/designer-grafico/skills/design-no-figma/SKILL.md",
+        "teams/designer-grafico/skills/carrossel-de-redes-sociais/SKILL.md",
+        "teams/designer-grafico/skills/apresentacao-pagina-a-pagina/SKILL.md",
+        "teams/designer-grafico/skills/capa-de-carrossel-com-movimento/SKILL.md"
+      ],
+      "requires": {
+        "apps": [
+          "Figma",
+          "Zim Studio"
+        ]
+      }
+    },
+    {
+      "slug": "editor-de-video",
+      "name": "EDITOR DE VÍDEO",
+      "summary": "Edita e dirige vídeo do bruto ao arquivo final: edit falando, tela dividida, motion, cenas de IA, voz, trilha e mixagem, com conferência quadro a quadro. Antes de usar, prepare: Tela do bot com ffmpeg.",
+      "category": "Vídeo",
+      "outcome": "Reels, Shorts e vídeos de motion entregues em alta, com legenda, letreiros, trilha e efeitos no lugar certo.",
+      "setupMinutes": 15,
+      "manifest": "teams/editor-de-video/editor-de-video.nordusteam.json",
+      "readme": "teams/editor-de-video/README.md",
+      "members": 1,
+      "skills": [
+        "teams/editor-de-video/skills/direcao-e-edicao-de-video/SKILL.md",
+        "teams/editor-de-video/skills/estudar-referencia-de-video/SKILL.md",
+        "teams/editor-de-video/skills/variacao-de-video-aprovado/SKILL.md",
+        "teams/editor-de-video/skills/trocar-elemento-em-video-entregue/SKILL.md",
+        "teams/editor-de-video/skills/motion-com-narracao-profissional/SKILL.md",
+        "teams/editor-de-video/skills/animacao-explicativa/SKILL.md",
+        "teams/editor-de-video/skills/video-com-avatar-e-voz-sintetica/SKILL.md"
+      ],
+      "requires": {
+        "apps": [
+          "Zim Studio",
+          "ElevenLabs",
+          "HeyGen",
+          "Epidemic Sound"
+        ]
+      }
+    },
+    {
+      "slug": "estrategista-de-conteudo",
+      "name": "ESTRATEGISTA DE CONTEÚDO",
+      "summary": "Estrategista de conteúdo que pesquisa a conta e o nicho, defende uma tese por peça e entrega pautas, reels e carrosséis com hooks fortes e copy humanizada. Antes de usar: nenhum item é obrigatório; veja os opcionais no README.",
+      "category": "Marketing",
+      "outcome": "Pautas e peças com tese, três hooks diferentes e o porquê de cada escolha, tudo em um documento que você aprova por número.",
+      "setupMinutes": 10,
+      "manifest": "teams/estrategista-de-conteudo/estrategista-de-conteudo.nordusteam.json",
+      "readme": "teams/estrategista-de-conteudo/README.md",
+      "members": 2,
+      "skills": [
+        "teams/estrategista-de-conteudo/skills/estrategia-de-conteudo-para-redes/SKILL.md",
+        "teams/estrategista-de-conteudo/skills/leitura-de-material-do-cliente/SKILL.md",
+        "teams/estrategista-de-conteudo/skills/analise-de-performance-e-aprendizados/SKILL.md",
+        "teams/estrategista-de-conteudo/skills/humanizacao-de-copy/SKILL.md"
+      ],
+      "requires": {
+        "apps": [
+          "Métricas e agendamento de redes sociais"
+        ]
+      }
+    },
+    {
+      "slug": "financeiro",
+      "name": "FINANCEIRO",
+      "summary": "Assistente financeiro que fecha as faturas mensais dos clientes, acompanha os alertas do banco, cobra atrasos e responde dúvidas, sem mexer no seu dinheiro. Antes de usar, prepare: E-mail e Tabela de clientes e contratos.",
+      "category": "Financeiro",
+      "outcome": "Faturas do mês prontas, com cada valor rastreado na tabela ou no contrato, aprovadas por você antes do envio.",
+      "setupMinutes": 10,
+      "manifest": "teams/financeiro/financeiro.nordusteam.json",
+      "readme": "teams/financeiro/README.md",
+      "members": 1,
+      "skills": [
+        "teams/financeiro/skills/fatura-mensal-de-clientes/SKILL.md",
+        "teams/financeiro/skills/triagem-de-alertas-bancarios/SKILL.md",
+        "teams/financeiro/skills/cobranca-e-atendimento-financeiro/SKILL.md"
+      ],
+      "requires": {
+        "apps": [
+          "E-mail",
+          "Planilhas",
+          "Plataforma de cobrança"
+        ]
+      }
+    },
+    {
+      "slug": "gerente-de-operacao",
+      "name": "GERENTE DE OPERAÇÃO",
+      "summary": "Gerente da operação que reparte cada pedido entre os bots do time, cobra prazos e pendências, faz o relatório diário e leva a você só o que depende de você. Antes de usar: nenhum item é obrigatório; veja os opcionais no README.",
+      "category": "Operação",
+      "outcome": "Cada pedido chega ao bot certo com o briefing completo, e o status de todos os pedidos fica num quadro único.",
+      "setupMinutes": 10,
+      "manifest": "teams/gerente-de-operacao/gerente-de-operacao.nordusteam.json",
+      "readme": "teams/gerente-de-operacao/README.md",
+      "members": 1,
+      "skills": [
+        "teams/gerente-de-operacao/skills/delegacao-e-acompanhamento-de-pedidos/SKILL.md",
+        "teams/gerente-de-operacao/skills/relatorio-diario-da-operacao/SKILL.md",
+        "teams/gerente-de-operacao/skills/coordenacao-recorrente-entre-bots/SKILL.md",
+        "teams/gerente-de-operacao/skills/escolha-de-modelo-por-bot/SKILL.md",
+        "teams/gerente-de-operacao/skills/cancelamento-de-assinatura-na-web/SKILL.md",
+        "teams/gerente-de-operacao/skills/recuperacao-de-dominio-suspenso/SKILL.md",
+        "teams/gerente-de-operacao/skills/consulta-de-fato-no-arquivo-de-email/SKILL.md"
+      ],
+      "requires": {
+        "apps": [
+          "E-mail",
+          "Agenda",
+          "Arquivos em nuvem",
+          "Gerenciador de tarefas",
+          "Agendador de redes sociais"
+        ]
+      }
+    },
+    {
+      "slug": "pesquisador",
+      "name": "PESQUISADOR",
+      "summary": "Pesquisador que vasculha a web e os seus arquivos e volta com um brief: a resposta primeiro, a evidência com links e o que não deu para verificar. Antes de usar, prepare: Busca na web e navegador.",
+      "category": "Pesquisa",
+      "outcome": "Brief com a resposta na primeira frase, cada afirmação com um link que foi aberto e o que ficou sem verificação.",
+      "setupMinutes": 5,
+      "manifest": "teams/pesquisador/pesquisador.nordusteam.json",
+      "readme": "teams/pesquisador/README.md",
+      "members": 1,
+      "skills": [
+        "teams/pesquisador/skills/pesquisa-com-fonte/SKILL.md",
+        "teams/pesquisador/skills/pauta-de-conteudo-com-fonte/SKILL.md",
+        "teams/pesquisador/skills/apuracao-de-fala-ou-numero-lembrado/SKILL.md",
+        "teams/pesquisador/skills/encaminhamento-de-pedido-a-outro-bot/SKILL.md"
+      ],
+      "requires": {
+        "apps": [
+          "Arquivos em nuvem"
+        ]
+      }
+    },
+    {
+      "slug": "programador",
+      "name": "PROGRAMADOR",
+      "summary": "Programador que altera, testa, commita e publica sites e plataformas, sempre pela última versão e só com o seu ok para ir ao ar. Antes de usar, prepare: Tela do bot e Repositório de código (git).",
+      "category": "Desenvolvimento",
+      "outcome": "Mudanças de código pequenas e verificadas, com testes, tipos e lint rodados antes de ir ao ar.",
+      "setupMinutes": 15,
+      "manifest": "teams/programador/programador.nordusteam.json",
+      "readme": "teams/programador/README.md",
+      "members": 1,
+      "skills": [
+        "teams/programador/skills/mudanca-de-codigo-com-seguranca/SKILL.md",
+        "teams/programador/skills/entrega-de-funcionalidade-web-com-teste-no-navegador/SKILL.md",
+        "teams/programador/skills/correcao-a-partir-de-relato-de-erro/SKILL.md"
+      ],
+      "requires": {
+        "apps": [
+          "GitHub",
+          "Hospedagem (por exemplo, Cloudflare)"
+        ]
+      }
+    },
+    {
+      "slug": "projetista-de-robos",
+      "name": "PROJETISTA DE ROBÔS",
+      "summary": "Projetista que desenha bots novos com você: função, instruções, habilidades, ferramentas, automações e riscos, em uma ficha pronta para criar no Nordus. Antes de usar: nenhum item é obrigatório; veja os opcionais no README.",
+      "category": "Automação",
+      "outcome": "Ficha completa de bot: nome, título, descrição, instruções permanentes, habilidades, ferramentas, automações e riscos.",
+      "setupMinutes": 5,
+      "manifest": "teams/projetista-de-robos/projetista-de-robos.nordusteam.json",
+      "readme": "teams/projetista-de-robos/README.md",
+      "members": 1,
+      "skills": [
+        "teams/projetista-de-robos/skills/desenho-de-novo-bot/SKILL.md",
+        "teams/projetista-de-robos/skills/escrita-de-alma-e-skills/SKILL.md",
+        "teams/projetista-de-robos/skills/conexoes-e-requisitos-do-bot/SKILL.md"
+      ],
+      "requires": {
+        "apps": []
+      }
+    },
+    {
+      "slug": "social-media",
+      "name": "SOCIAL MEDIA",
+      "summary": "Social media que planeja o conteúdo, pede design e vídeo ao time, leva tudo para a sua aprovação na conversa e só agenda o que você liberar. Antes de usar, prepare: Agendador de redes sociais.",
+      "category": "Marketing",
+      "outcome": "Cada pedido de conteúdo dividido entre quem planeja, quem escreve, quem edita e quem desenha, com o briefing completo em um só envio.",
+      "setupMinutes": 10,
+      "manifest": "teams/social-media/social-media.nordusteam.json",
+      "readme": "teams/social-media/README.md",
+      "members": 1,
+      "skills": [
+        "teams/social-media/skills/fluxo-de-conteudo-social-media/SKILL.md",
+        "teams/social-media/skills/legenda-de-post/SKILL.md",
+        "teams/social-media/skills/aprovacao-e-agendamento-de-posts/SKILL.md"
+      ],
+      "requires": {
+        "apps": [
+          "Agendador de redes sociais"
+        ]
+      }
+    },
+    {
+      "slug": "trafego-pago",
+      "name": "TRÁFEGO PAGO",
+      "summary": "Time de nove bots que abre o projeto, testa criativos, opera a conta da Meta dentro de um teto e reporta o retorno, com revisão de política antes do ar. Antes de usar, prepare: Meta Ads e Tela do bot.",
+      "category": "Marketing",
+      "outcome": "Cada projeto aberto com meta de retorno, teto diário e mensal e freio do dia, aprovados por você uma vez.",
+      "setupMinutes": 30,
+      "manifest": "teams/trafego-pago/trafego-pago.nordusteam.json",
+      "readme": "teams/trafego-pago/README.md",
+      "members": 9,
+      "skills": [
+        "teams/trafego-pago/skills/gestao-do-time-de-trafego/SKILL.md",
+        "teams/trafego-pago/skills/execucao-de-ordens-de-campanha/SKILL.md",
+        "teams/trafego-pago/skills/economia-e-teto-de-midia/SKILL.md",
+        "teams/trafego-pago/skills/leitura-de-resultado-de-anuncios/SKILL.md",
+        "teams/trafego-pago/skills/revisao-de-politica-de-anuncios/SKILL.md",
+        "teams/trafego-pago/skills/direcao-de-criativo-para-anuncios/SKILL.md",
+        "teams/trafego-pago/skills/copy-de-anuncios/SKILL.md",
+        "teams/trafego-pago/skills/estrategia-e-ordens-de-midia/SKILL.md",
+        "teams/trafego-pago/skills/pesquisa-de-growth-para-anuncios/SKILL.md"
+      ],
+      "requires": {
+        "apps": [
+          "Meta Ads",
+          "Vendas reais (gateway de pagamento ou plataforma de vendas)"
+        ]
+      }
+    }
+  ]
+}
